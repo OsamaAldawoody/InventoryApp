@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddNewProduct">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_product_pic_text"
+        android:text="@string/product_pic"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:id="@+id/product_image_view"
+        android:contentDescription="@string/product_pic"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/browse"
+        android:id="@+id/browse_image"
+        style="@style/btnStyle"/>
+    <android.support.v7.widget.AppCompatEditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_name_add_edit_text"
+        style="@style/etxtStyle"
+        android:hint="@string/product_name_text"
+        app:backgroundTint="@color/colorPrimary"/>
+
+
+
+    <android.support.v7.widget.AppCompatEditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/supplier_name_edit_text"
+        style="@style/etxtStyle"
+        android:inputType="text"
+        android:hint="@string/supplier_name"
+        app:backgroundTint="@color/colorPrimary"/>
+
+    <android.support.v7.widget.AppCompatEditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/supplier_phone_email_edit_text"
+        style="@style/etxtStyle"
+        android:inputType="text"
+        android:hint="@string/phone_or_email"
+        app:backgroundTint="@color/colorPrimary"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        style="@style/btnStyle"/>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">InventoryApp</string>
+    <!--product item layout -->
+    <string name="image_product_description">product image</string>
+
+    <!--detail layout -->
+    <string name="product_name_text">Product Name :</string>
+    <string name="product_price_text">Price Name :</string>
+    <string name="product_quantity_text">Quantity Name :</string>
+    <string name="order_button_text">Order</string>
+    <string name="delete_button_text">Delete</string>
+
+    <!--add new product layout -->
+    <string name="supplier_name">Supplier Name : </string>
+    <string name="product_pic">Add Product Picture </string>
+    <string name="phone_num">Use Phone</string>
+    <string name="mail">Use E-mail</string>
+    <string name="browse">Browse</string>
+    <string name="phone_or_email">Add supplier mail or phone</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/product_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/image_margin"
+        android:contentDescription="@string/image_product_description"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/name_price_layout_info"
+        android:layout_toEndOf="@+id/product_image_view">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:id="@+id/name_text_view"
+            android:textSize="@dimen/product_name_size"
+            android:layout_margin="@dimen/name_price_info_margin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20$"
+            android:id="@+id/price_text_view"
+            android:textSize="@dimen/product_price_size"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SALE | 5"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/sale_button"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
+
+</RelativeLayout>
